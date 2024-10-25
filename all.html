@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all status</title>
+    <!-- fontewesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <!-- goole font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- main css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header_section">
+        <div class="container">
+            <div class="main_header_column">
+                <div class="logo_column">
+                    <a href="index.html">RN-Status</a>
+                </div>
+                <div class="search_column">
+                    <input type="text" class="search-box" id="search-input" onkeyup="searchWords()" placeholder="Type a word...">
+                </div>
+                <div class="menu_column">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="all.html">all</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header section end -->
+    <section class="inner_banner_section">
+        <img src="images/banner/inner_banner.jpeg" alt="inner banner">
+        <div class="container">
+            <div class="content">
+                <h2>status</h2>
+            </div>
+        </div>
+    </section>
+    <section class="all_main_section" id="word-list">
+        <div class="container">
+            <div class="main_column_all">
+                <!-- Left Sidebar for Categories -->
+                <div class="sidebar">
+                    <ul>
+                        <li>
+                            <button onclick="showSubCategories('status')">Status</button>
+                            <ul id="status-subcategories" style="display:none; list-style-type:none;">
+                                <li><button onclick="showCategory('motivational')">Motivational Status</button></li>
+                                <li><button onclick="showCategory('love')">Love Status</button></li>
+                                <li><button onclick="showCategory('funny')">Funny Status</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button onclick="showSubCategories('videos')">Videos</button>
+                            <ul id="videos-subcategories" style="display:none; list-style-type:none;">
+                                <li><button onclick="showCategory('inspirational')">Inspirational Videos</button></li>
+                                <li><button onclick="showCategory('educational')">Educational Videos</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button onclick="showSubCategories('images')">Images</button>
+                            <ul id="images-subcategories" style="display:none; list-style-type:none;">
+                                <li><button onclick="showCategory('nature')">Nature Images</button></li>
+                                <li><button onclick="showCategory('city')">City Images</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right Content Area -->
+                <div class="content" id="content">
+                    <section class="all_status_main_section" id="word-list">
+                        <div class="container">
+                            <div class="main_column">
+                                <div class="status-section">
+                                    <div class="flex_column">
+                                        <div class="status" id="status1">
+                                            <p>Life is a journey, not a destination. Embrace every moment.</p>
+                                            <p class="bengali-status" id="bengaliStatus1"></p>
+                                        </div>
+                                        <button class="copy-btn" onclick="copyStatus('status1')">Copy Text</button>
+                                    </div>
+                                </div>
+                                <div class="status-section">
+                                    <div class="flex_column">
+                                        <div class="status" id="status2">
+                                            <p>In the end, we only regret the chances we didn’t take.</p>
+                                            <p class="bengali-status" id="bengaliStatus2"></p>
+                                        </div>
+                                        <button class="copy-btn" onclick="copyStatus('status2')">Copy Text</button>
+                                    </div>
+                                </div>
+                                <div class="status-section">
+                                    <div class="flex_column">
+                                        <div class="status" id="status3">
+                                            <p>Happiness is not something ready-made. It comes from your own actions.</p>
+                                            <p class="bengali-status" id="bengaliStatus3"></p>
+                                        </div>
+                                        <button class="copy-btn" onclick="copyStatus('status3')">Copy Text</button>
+                                    </div>
+                                </div>
+                                <div class="status-section">
+                                    <div class="flex_column">
+                                        <div class="status" id="status4">
+                                        <p>The best things in life aren’t things; they are moments, people, and memories.</p>
+                                        <p class="bengali-status" id="bengaliStatus4"></p>
+                                    </div>
+                                    <button class="copy-btn" onclick="copyStatus('status4')">Copy Text</button>
+                                    </div>
+                                </div>
+                                <div class="status-section">
+                                    <div class="flex_column">
+                                        <div class="status" id="status5">
+                                            <p>Life is not about waiting for the storm to pass but learning to dance in the rain.</p>
+                                            <p class="bengali-status" id="bengaliStatus5"></p>
+                                        </div>
+                                        <button class="copy-btn" onclick="copyStatus('status5')">Copy Text</button>
+                                    </div>
+                                </div>
+                                <div class="status-section">
+                                    <div class="flex_column">
+                                        <div class="status" id="status6">
+                                            <p>Happiness is not something ready-made. It comes from your own actions.</p>
+                                            <p class="bengali-status" id="bengaliStatus6"></p>
+                                        </div>
+                                        <button class="copy-btn" onclick="copyStatus('status6')">Copy Text</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- all section end -->
+    <section class="video_section_column" id="word-list">
+        <div class="container">
+            <div class="header_text">
+                <h2>Videos</h2>
+                <a href="all.html">see more....</a>
+            </div>
+            <div class="main_video_col">
+                <div class="section" id="video-section">
+                    <div class="video">
+                        <video controls>
+                            <source src="videos/viral.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button onclick="downloadVideo('video1.mp4')">Download Video</button>
+                    </div>
+                </div>
+                <div class="video_section_column">
+                    <div class="video">
+                        <video controls>
+                            <source src="videos/viral.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button onclick="downloadVideo('video1.mp4')">Download Video</button>
+                    </div>
+                </div>
+                <div class="video_section_column">
+                    <div class="video">
+                        <video controls>
+                            <source src="videos/viral.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button onclick="downloadVideo('video1.mp4')">Download Video</button>
+                    </div>
+                </div>
+                <div class="video_section_column">
+                    <div class="video">
+                        <video controls>
+                            <source src="videos/viral.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button onclick="downloadVideo('video1.mp4')">Download Video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- videos section end -->
+    <section class="images_section" id="word-list">
+        <div class="container">
+            <div class="header_text">
+                <h2>images</h2>
+                <a href="all.html">see more....</a>
+            </div>
+            <div class="main_images_column">
+                <div class="section" id="image-section">
+                    <div class="image">
+                        <img src="images/love1.jpeg" alt="Image 1" onclick="downloadImage('images/love1.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love2.jpeg" alt="Image 1" onclick="downloadImage('images/love2.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love3.jpeg" alt="Image 1" onclick="downloadImage('images/love3.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love4.jpeg" alt="Image 1" onclick="downloadImage('images/love4.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love5.jpeg" alt="Image 1" onclick="downloadImage('images/love5.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love6.jpeg" alt="Image 1" onclick="downloadImage('images/love6.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love7.jpeg" alt="Image 1" onclick="downloadImage('images/love7.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love8.jpeg" alt="Image 1" onclick="downloadImage('images/love8.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section">
+                    <div class="image">
+                        <img src="images/love1.jpeg" alt="Image 1" onclick="downloadImage('images/love1.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love2.jpeg" alt="Image 1" onclick="downloadImage('images/love2.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love3.jpeg" alt="Image 1" onclick="downloadImage('images/love3.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+                <div class="section" id="image-section"> 
+                    <div class="image">
+                        <img src="images/love4.jpeg" alt="Image 1" onclick="downloadImage('images/love4.jpeg')">
+                        <p>Click on the image to download</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- images section end -->
+    <footer class="main_footer">
+        <div class="container">
+            <div class="main_column_footer">
+                <div class="left_column">
+                    <p>Copyright &copy; 2024 Bio Status RN</p>
+                </div>
+                <div class="right_column">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script link code here -->
+    <script src="js/all.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
